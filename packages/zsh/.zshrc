@@ -1,21 +1,30 @@
+
 #!/usr/bin/env zsh
 
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-eval $(gdircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
+if [[ $TERMINIX_ID ]]; then
+        source /etc/profile.d/vte.sh
+fi
+
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+
+#eval $(gdircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
 
 # Read aliases
-source "$HOME/.aliases"
+#source "$HOME/.aliases"
 
 # Access private configuration
-[[ -a ~/.private/.zshrc ]] && source ~/.private/.zshrc
+# [[ -a ~/.private/.zshrc ]] && source ~/.private/.zshrc
   
 # Prezto seems to override grc with some annoying alias
-unalias grc 2> /dev/null
-unalias gcp 2> /dev/null
-unalias gls 2> /dev/null
+# unalias grc 2> /dev/null
+# unalias gcp 2> /dev/null
+# unalias gls 2> /dev/null
 
 # fpath=(/usr/local/share/zsh-completions $fpath)
 # fpath=(~/.zsh/completion $fpath)
@@ -24,7 +33,7 @@ unalias gls 2> /dev/null
 # (rbenv rehash &) 2> /dev/null
 
 # GRC colorizes nifty unix tools all over the place
-source "`brew --prefix`/etc/grc.bashrc"
+#source "`brew --prefix`/etc/grc.bashrc"
 
 # bind hh to Ctrl-r (for Vi mode check doc)
 # bindkey -s "\C-r" "\eqhh\n"
@@ -33,13 +42,13 @@ source "`brew --prefix`/etc/grc.bashrc"
 #[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Lunchy
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
-fi
+# LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+# if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+#   . $LUNCHY_DIR/lunchy-completion.zsh
+# fi
 
 # Fuck
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 # Automatically list directory contents on `cd`.
 auto-ls () {
@@ -56,14 +65,14 @@ chpwd_functions=( auto-ls $chpwd_functions )
 # Enable syntax highlighting
 #source "`brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.zsh/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $HOME/.zsh/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
 
-source ~/.fzf
+# source ~/.fzf
 
 # Automatically load .envrc files
 # https://github.com/direnv/direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 files=(
   # options
@@ -85,10 +94,9 @@ files=(
   # autopair
   aka
   ghq
-  iterm2
   htop
   fasd
-  docker
+  # docker
   # z
 )
 
@@ -98,3 +106,5 @@ for file in $files; do
 done
 
 autoload -Uz compinit && compinit -i
+
+

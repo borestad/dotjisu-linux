@@ -18,9 +18,9 @@ if [ ! type "hr" &> /dev/null ]; then; brew install hr; fi
 if [ ! type "stow" &> /dev/null ]; then; brew install stow; fi
 
 ./bin/dot-symlink
-# ./bin/dot-zsh
+ ./bin/dot-zsh
 
-# ./bin/dot-brew
+ ./bin/dot-brew
 # ./bin/dot-gem
 # ./bin/dot-node
 # #./bin/dot-npm
