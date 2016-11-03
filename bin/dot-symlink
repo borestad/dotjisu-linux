@@ -14,15 +14,15 @@ BASEFILES=(
 	editorconfig
 	fzf
 	git
-	htop
+	# htop
 	nano
-	prezto
+	# prezto
 	ruby
-	shell
+	# shell
 	wget
-	tmux
-	zsh
+	# tmux
+	# zsh
 )
 stow -Rv -t $HOME $BASEFILES
 
-dotp-symlink
+# dotp-symlink
