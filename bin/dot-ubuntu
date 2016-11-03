@@ -51,3 +51,4 @@ sudo apt install -y \
 
 # TTFs
 # sudo apt-get install ttf-mscorefonts-installer
+sudo apt autoremove -y

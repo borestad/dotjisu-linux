@@ -4,22 +4,22 @@
 # Globals & system overrids
 # =========================================================
 alias brew -="brew -v"
-alias cp='gcp -v'
+alias cp='cp -v'
 alias ctt='pygmentize -O style=monokai -f console256 -g'
 alias ctt2='pygmentize -O style=monokai -g'
 ct () { ctt "$@" | cat -n | sed 's/^[ 0-9]*[0-9]/\o033[34m&\o033[0m/' | less -R }
 alias h="history | fzf --reverse"
-alias mkdir='gmkdir -pv'
-alias mv='gmv -v'
+alias mkdir='mkdir -pv'
+alias mv='mv -v'
 alias path='echo -e ${PATH//:/\\n}'
 alias pgrep='pgrep -fli'
-alias rm='grm -v'
+alias rm='rm -v'
 alias serve='http-server'
 alias wget='wget --no-check-certificate'
 alias nx='PATH=$(npm bin):$PATH'
 alias crontab='VISUAL=nano EDITOR=nano crontab'
-alias npm_='/usr/local/bin/npm'
-alias _npm='/usr/local/bin/npm'
+#alias npm_='/usr/local/bin/npm'
+#alias _npm='/usr/local/bin/npm'
 wh () { which -a "$@" | ctt2 }
 
 # function npm {
@@ -84,18 +84,15 @@ alias sl='ls'            # I often screw this up.
 # =========================================================
 # Gnu utils (to enforce presedence)
 # =========================================================
-alias xargs='/usr/local/opt/findutils/bin/xargs'
-alias find='/usr/local/opt/findutils/bin/find'
-alias locate='/usr/local/opt/findutils/bin/locate'
-alias updatedb='/usr/local/opt/findutils/bin/updatedb'
+#alias xargs='/usr/local/opt/findutils/bin/xargs'
+#alias find='/usr/local/opt/findutils/bin/find'
+#alias locate='/usr/local/opt/findutils/bin/locate'
+#alias updatedb='/usr/local/opt/findutils/bin/updatedb'
 
 # =========================================================
 # Others
 # =========================================================
-alias spotlight.access='sudo fs_usage -w -f filesys -e Terminal tee | tee fs_usage.log'
-alias spotlight.rebuild='sudo mdutil -E /'
 alias speedtest="speedtest-cli"
-
 
 # =========================================================
 # Boilerplate shortcuts
