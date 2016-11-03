@@ -12,15 +12,16 @@ BASEFILES=(
 	ack
 	curl
 	editorconfig
+	fasd
 	fzf
 	git
-	# htop
+	htop
 	nano
 	prezto
 	ruby
 	shell
 	wget
-	# tmux
+	tmux
 	zsh
 )
 stow -Rv -t $HOME $BASEFILES

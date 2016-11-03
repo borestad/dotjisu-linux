@@ -18,18 +18,18 @@ if [ ! type "hr" &> /dev/null ]; then; brew install hr; fi
 if [ ! type "stow" &> /dev/null ]; then; brew install stow; fi
 
 ./bin/dot-symlink
- ./bin/dot-zsh
+./bin/dot-zsh
 
  ./bin/dot-brew
 # ./bin/dot-gem
 # ./bin/dot-node
 # #./bin/dot-npm
 # ./bin/dot-manual
-# ./bin/dot-osx
+./bin/dot-ubuntu
 # ./bin/dot-osx-services
 # ./bin/dot-python
 # ./bin/dot-ruby
-# ./bin/dot-ssh
+./bin/dot-ssh
 # ./bin/dot-clean
 
 # brew link git-annex

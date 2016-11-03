@@ -1,13 +1,15 @@
 
 #!/usr/bin/env zsh
 
+if [[ $TERMINIX_ID ]]; then
+  source /etc/profile.d/vte.sh
+fi
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-if [[ $TERMINIX_ID ]]; then
-        source /etc/profile.d/vte.sh
-fi
+
 
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
@@ -16,7 +18,7 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 eval $(dircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
 
 # Read aliases
-#source "$HOME/.aliases"
+source "$HOME/.aliases"
 
 # Access private configuration
 [[ -a ~/.private/.zshrc ]] && source ~/.private/.zshrc
@@ -92,7 +94,6 @@ files=(
   # bindkeys
   # terminal
   # autopair
-  aka
   ghq
   htop
   fasd

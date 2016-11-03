@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# Create user lib
+mkdir -p ~/bin
+
+# Core
+sudo apt install -y aptitude 
+# Development
+sudo apt install -y python-pip python-dev build-essential
+
+# Sensors
+sudo apt install -y conky curl lm-sensors hddtemp
+
+# Network monitor deps
+sudo apt install -y gir1.2-gtop-2.0
+
+# GUI Utils
+sudo apt install -y \
+	bleachbit deja-dup bleachbit gparted \
+	conky-all gitk gitg git-gui
+
+# CLI Utils
+sudo apt install -y \
+	curl \
+	dfc \
+	dialog \
+	git \
+	iotop \
+	jq \
+	lnav \
+	mc \
+	mtr \
+	multitail \
+	ncdu \
+	ngrep \
+	ngrep \
+	pbzip2 \
+	pigz \
+	plzip \
+	pv \
+	stow \
+	sysbench \
+	tree \
+	unrar \
+	wget \
+	zsh
+
+# Libvirt
+# sudo apt install -y \
+# 	qemu-kvm qemu-system libvirt-bin virt-manager gnome-boxes
+
+# TTFs
+# sudo apt-get install ttf-mscorefonts-installer

@@ -1,0 +1,107 @@
+#!/bin/bash
+# exit if any command exits with nonzero status
+#set -e
+
+echo ''
+DIR=`dirname $0`
+META_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo $META_DIR
+
+install_ppa () {
+
+  # zsh default
+  chsh -s $(which zsh)
+
+  PKGS=()
+
+  # Brews's
+  # ============================================================================
+  
+  # Homebrew
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
+  # get emoji
+  curl 'https://raw.githubusercontent.com/heewa/bae/master/emoji_vars.sh' > ~/.emoji_vars.sh
+  mkdir -p ~/.config/autokey/data/dotfiles;
+  rm -rf ~/.config/autokey/data/dotfiles; ln -sv ~/.dotfiles/autokey ~/.config/autokey/data/dotfiles
+
+  # Installing deps for building Nylas N1
+  # PKGS+=('libgnome-keyring-dev')
+
+  # Add nice flat icons
+  sudo add-apt-repository -y ppa:snwh/pulp
+  PKGS+=('paper-gtk-theme')
+
+  sudo add-apt-repository -y ppa:noobslab/icons
+  PKGS+=('ultra-flat-icons ultra-flat-icons-green ultra-flat-icons-oranges')
+
+  # Dolphin
+  sudo apt-add-repository -y ppa:dolphin-emu/ppa
+  PKGS+=('dolphin-emu')
+
+
+
+  # PPA's
+  # ============================================================================
+  echo "Installing PPA's";
+
+  hr; echo "Atom editor"
+  sudo add-apt-repository -y ppa:webupd8team/atom
+  PKGS+=('atom')
+
+  hr; echo "Numix theme"
+  sudo add-apt-repository -y ppa:numix/ppa
+  PKGS+=('numix-*')
+
+  hr; echo "Conky manager"
+  sudo add-apt-repository -y ppa:teejee2008/ppa
+    PKGS+=('conky-all conky-manager')
+
+  hr; echo "Sublime text 3"
+  sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+  PKGS+=('sublime-text-installer')
+
+  hr; echo "hh (hstr)"
+  sudo add-apt-repository -y ppa:ultradvorka/ppa
+  PKGS+=('hh libncursesw5-dev')
+
+  hr; echo "PPA Manager";
+  sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+  PKGS+=('y-ppa-manager')
+
+
+  hr; echo "Albert";
+  sudo add-apt-repository -y ppa:nilarimogard/webupd8
+  PKGS+=('albert')
+
+  hr; echo "Plank";
+  sudo add-apt-repository -y ppa:docky-core/stable
+  sudo add-apt-repository -y ppa:noobslab/apps
+  PKGS+=('plank plank-themer')
+
+  hr; echo "Terminix";
+  sudo add-apt-repository -y ppa:webupd8team/terminix
+  PKGS+=('terminix')
+
+  # Awesome fonts
+  #PKGS+=('ttf-inconsolata')
+
+  sudo apt update
+
+  #sudo apt install ${PKGS}
+  for p in "${PKGS[@]}"
+  do
+  sudo apt install "${p}"
+  # do something on $var
+  done
+
+  # For plank themer
+  cd /tmp/ && ./Replace.sh;cd
+
+}
+
+
+install_ppa
+
+echo ''
+echo 'Bootstrapping ppa complete!'
