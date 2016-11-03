@@ -13,17 +13,17 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 
-#eval $(gdircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
+eval $(dircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
 
 # Read aliases
 #source "$HOME/.aliases"
 
 # Access private configuration
-# [[ -a ~/.private/.zshrc ]] && source ~/.private/.zshrc
+[[ -a ~/.private/.zshrc ]] && source ~/.private/.zshrc
   
 # Prezto seems to override grc with some annoying alias
-# unalias grc 2> /dev/null
-# unalias gcp 2> /dev/null
+unalias grc 2> /dev/null
+unalias gcp 2> /dev/null
 # unalias gls 2> /dev/null
 
 # fpath=(/usr/local/share/zsh-completions $fpath)
@@ -33,13 +33,13 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # (rbenv rehash &) 2> /dev/null
 
 # GRC colorizes nifty unix tools all over the place
-#source "`brew --prefix`/etc/grc.bashrc"
+source "`brew --prefix`/etc/grc.bashrc"
 
 # bind hh to Ctrl-r (for Vi mode check doc)
-# bindkey -s "\C-r" "\eqhh\n"
+bindkey -s "\C-r" "\eqhh\n"
 
 # Autojump
-#[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Lunchy
 # LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
@@ -48,7 +48,7 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # fi
 
 # Fuck
-# eval $(thefuck --alias)
+eval $(thefuck --alias)
 
 # Automatically list directory contents on `cd`.
 auto-ls () {
@@ -72,7 +72,7 @@ chpwd_functions=( auto-ls $chpwd_functions )
 
 # Automatically load .envrc files
 # https://github.com/direnv/direnv
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 files=(
   # options
