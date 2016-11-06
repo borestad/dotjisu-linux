@@ -81,13 +81,18 @@ alias lc='lt -c'         # Lists sorted by date, most recent last, shows change 
 alias lu='lt -u'         # Lists sorted by date, most recent last, shows access time.
 alias sl='ls'            # I often screw this up.
 
+connected_display () {
+  xrandr -q | grep " connected" | ack -ho '(^\w+)'
+}
+brightness() {
+  local input=$1
+  xrandr --output `connected_display` --brightness $input
+}
+
 # =========================================================
 # Gnu utils (to enforce presedence)
 # =========================================================
-#alias xargs='/usr/local/opt/findutils/bin/xargs'
-#alias find='/usr/local/opt/findutils/bin/find'
-#alias locate='/usr/local/opt/findutils/bin/locate'
-#alias updatedb='/usr/local/opt/findutils/bin/updatedb'
+
 
 # =========================================================
 # Others
@@ -255,15 +260,16 @@ vm () {
 file.size () { wc -c < $1 }
 
 # Monitor IO in real-time (open files etc).
-files.open () {
-  sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
-}
+# files.open () {
+#   sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
+# }
+
 # Files used, anywhere on the filesystem
-alias files.usage='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep'
+#alias files.usage='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep'
 # Files being opened (OSX Only)
-alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
+#alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
 # Files in use in the Users directory
-alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep Users'
+#alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep Users'
 
 ddd() {
   local cmd="dd if='"$1"' | pv | sudo dd of=/dev/rdisk"$2" bs=1m"

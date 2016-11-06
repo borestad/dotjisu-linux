@@ -1,57 +1,45 @@
 #!/usr/bin/env zsh
-npm set progress=true
+
+[ -x "$(command -v yarn)" ] || {
+  npm i yarn -g
+}
 
 packages=(
   bcat
-  bower
-  browser-run
-  casperjs
-  coffee-script
+#  bower
+#  browser-run
+#  casperjs
+#  coffee-script
   david
-  debug
-  electron-prebuilt
-  esformatter
-  gatsby
+#  debug
+#  electron-prebuilt
+#  esformatter
+#  gatsby
   http-server
-  js2coffee
+#  js2coffee
   diff-so-fancy
-  jscodeshift
-  jscs
-  jshint
-  jsinspect
-  jslint
-  livescript
-  node-debugger
-  n_
-  npm-cache
-  npm-check
-  pen.md
-  pen.md
-  phantomjs-prebuilt
+#  jscodeshift
+#  jscs
+#  jshint
+#  jsinspect
+#  jslint
+#  livescript
+#  node-debugger
+#  n_
+#  npm-cache
+#  npm-check
+#  pen.md
+#  phantomjs-prebuilt
   public-ip
-  rtail
-  shipit-cli
-  tmpin
-  vantage
+#  rtail
+#  shipit-cli
+#  tmpin
+#  vantage
   vtop
-  webpack
-  webpack-bundle-size-analyzer
-  webpack-dev-server
-  yo
+#  webpack
+#  webpack-bundle-size-analyzer
+#  webpack-dev-server
+#  yo
 )
 
-npm set progress=false
-
-# for pkg in $packages; do  
-#   hr -
-#   echo "Uninstalling ${pkg}"
-#   npm un -g "${pkg}"
-# done
-
-for pkg in $packages; do  
-  hr -
-  echo "Installing ${pkg}"
-  NODE_ENV=production npm i -g "${pkg}@latest"
-done
-
-npm set progress=true
+yarn global add ${packages[@]}

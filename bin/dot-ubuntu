@@ -47,7 +47,10 @@ sudo apt install -y \
 	thefuck \
 	direnv \
 	wget \
-	zsh
+	zsh \
+	notify-osd \
+	silversearcher-ag \
+	ack-grep
 
 # Libvirt
 # sudo apt install -y \
