@@ -26,6 +26,8 @@ sudo apt install -y \
 	dialog \
 	git \
 	iotop \
+	htop \
+	glances \
 	jq \
 	lnav \
 	mc \
@@ -42,6 +44,8 @@ sudo apt install -y \
 	sysbench \
 	tree \
 	unrar \
+	thefuck \
+	direnv \
 	wget \
 	zsh
 

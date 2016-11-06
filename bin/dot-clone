@@ -2,6 +2,9 @@
 
 echo ''; hr - '#' -
 echo "[Updating ZSH Frameworks]\n"
+mkdir -p $HOME/.zsh
+mkdir -p $HOME/.tmp
+mkdir -p $HOME/.fonts
 
 echo '  - Antigen'
 git -C $HOME/.zsh/antigen pull || git clone git://github.com/zsh-users/antigen.git $HOME/.zsh/antigen
@@ -28,6 +31,11 @@ echo '  - Powerline fonts'
 git -C /tmp/pl-fonts pull || git clone --recursive git://github.com/powerline/fonts.git /tmp/pl-fonts && \
 /tmp/pl-fonts/install.sh
 
+echo '  - Google Fonts'
+git -C $HOME/.tmp/google-fonts pull || git clone --recursive https://github.com/google/fonts.git $HOME/.tmp/google-fonts
+cd $HOME/.tmp/google-fonts && git submodule update --init --recursive
+
+#cp -R $HOME/.tmp/google-fonts/**/*.ttf $HOME/.fonts
 
 echo ' - Better npm'
 git -C $HOME/.zsh/zsh-better-npm-completion pull || git clone https://github.com/lukechilds/zsh-better-npm-completion.git $HOME/.zsh/zsh-better-npm-completion
