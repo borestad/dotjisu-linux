@@ -1,2 +1,1 @@
-if (window.get_active_title() != 'Terminal'):
-   keyboard.send_keys("<ctrl>+c")
+keyboard.send_keys("<ctrl>+c")

@@ -1,5 +1,5 @@
 {
-    "usageCount": 73, 
+    "usageCount": 108, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "<home>", 
@@ -14,12 +14,12 @@
     "hotkey": {
         "hotKey": "<left>", 
         "modifiers": [
-            "<super>"
+            "<alt>", 
+            "<ctrl>", 
+            "<shift>"
         ]
     }, 
-    "modes": [
-        3
-    ], 
+    "modes": [], 
     "showInTrayMenu": false, 
     "filter": {
         "regex": null, 

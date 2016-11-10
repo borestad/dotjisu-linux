@@ -1,8 +1,8 @@
 {
-    "usageCount": 2, 
+    "usageCount": 122, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<ctrl>+,", 
+    "description": "<end>", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,14 +12,12 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": ",", 
+        "hotKey": "<right>", 
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ]
     }, 
-    "modes": [
-        3
-    ], 
+    "modes": [], 
     "showInTrayMenu": false, 
     "filter": {
         "regex": null, 
