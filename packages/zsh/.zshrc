@@ -9,8 +9,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-
-
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
@@ -58,17 +56,20 @@ auto-ls () {
   # explicit sexy ls'ing as aliases arent honored in here.
   hash gls >/dev/null 2>&1 && CLICOLOR_FORCE=1 gls -aFh --color --group-directories-first || ls
 }
+auto-pkg-scripts () {
+  emulate -L zsh;
+  [ -f "package.json" ] && cs package.json
+}
 
-chpwd_functions=( auto-ls $chpwd_functions )
+chpwd_functions=( auto-ls auto-pkg-scripts $chpwd_functions )
 
 # Go to default directory
 # chdir.default
 
 # Enable syntax highlighting
-#source "`brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $HOME/.zsh/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
+source "`brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "`brew --prefix`/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source $HOME/.zsh/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
 
 # source ~/.fzf
 
