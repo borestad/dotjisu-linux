@@ -17,18 +17,18 @@ install_ppa () {
 
   # Brews's
   # ============================================================================
-  
+
   # Homebrew
   # hr
   # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 
   # get emoji
   hr
-  
+
   curl 'https://raw.githubusercontent.com/heewa/bae/master/emoji_vars.sh' > ~/.emoji_vars.sh
   mkdir -p ~/.config/autokey/data/dotfiles;
   rm -rf ~/.config/autokey/data/dotfiles; ln -sv ~/.dotjitsu/packages/autokey ~/.config/autokey/data/dotfiles
-  
+
   # Installing deps for building Nylas N1
   # PKGS+=('libgnome-keyring-dev')
 
@@ -45,7 +45,9 @@ install_ppa () {
   PPAS+=('ppa:dolphin-emu/ppa')
   PKGS+=('dolphin-emu')
 
-
+  echo "- Kodi"
+  PPAS+=('ppa:team-xbmc/ppa')
+  PKGS+=('kodi')
 
   # PPA's
   # ============================================================================
@@ -95,6 +97,10 @@ install_ppa () {
   PPAS+=('ppa:eugenesan/ppa')
   PKGS+=('smartgit')
 
+  echo "- Retroarch";
+  PPAS+=('ppa:libretro/stable')
+  PKGS+=('retroarch retroarch-* libretro-*')
+
   echo "- Terminix";
   PPAS+=('ppa:webupd8team/terminix')
   [ -f /etc/profile.d/vte.sh ] || sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
@@ -106,17 +112,17 @@ install_ppa () {
     echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
     PKGS+=('spotify-client')
   }
-  
- 
-  for ppa in ${PPAS[@]}; 
-    do hr && sudo add-apt-repository -y $ppa; 
+
+
+  for ppa in ${PPAS[@]};
+    do hr && sudo add-apt-repository -y $ppa;
   done
 
   sudo apt update
   sudo apt install -y ${PKGS[@]}
-  
+
   # Awesome fonts
-  #PKGS+=('ttf-inconsolata')  
+  #PKGS+=('ttf-inconsolata')
 
   # For plank themer
   #cd /tmp/ && ./Replace.sh;cd

@@ -4,9 +4,9 @@
 mkdir -p ~/bin
 
 # Core
-sudo apt install -y aptitude 
+sudo apt install -y aptitude
 # Development
-sudo apt install -y python-pip python-dev build-essential
+sudo apt install -y python-pip python-dev build-essential python-software-properties
 
 # Sensors
 sudo apt install -y conky curl lm-sensors hddtemp
