@@ -19,8 +19,8 @@ install_ppa () {
   # ============================================================================
   
   # Homebrew
-  hr
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  # hr
+  # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
 
   # get emoji
   hr
@@ -82,15 +82,18 @@ install_ppa () {
   PPAS+=('ppa:webupd8team/y-ppa-manager')
   PKGS+=('y-ppa-manager')
 
-
   echo "- Albert";
   PPAS+=('ppa:nilarimogard/webupd8')
   PKGS+=('albert')
 
-  echo "- Plank"autokey;
+  echo "- Plank";
   PPAS+=('ppa:docky-core/stable')
   PPAS+=('ppa:noobslab/apps')
   PKGS+=('plank plank-themer')
+
+  echo "- Smartgit";
+  PPAS+=('ppa:eugenesan/ppa')
+  PKGS+=('smartgit')
 
   echo "- Terminix";
   PPAS+=('ppa:webupd8team/terminix')
@@ -104,18 +107,21 @@ install_ppa () {
     PKGS+=('spotify-client')
   }
   
+ 
+  for ppa in ${PPAS[@]}; 
+    do hr && sudo add-apt-repository -y $ppa; 
+  done
+
   sudo apt update
-  sudo add-apt-repository -y ${PPAS[@]}
   sudo apt install -y ${PKGS[@]}
   
   # Awesome fonts
   #PKGS+=('ttf-inconsolata')  
 
   # For plank themer
-  cd /tmp/ && ./Replace.sh;cd
+  #cd /tmp/ && ./Replace.sh;cd
 
 }
-
 
 install_ppa
 

@@ -127,3 +127,5 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

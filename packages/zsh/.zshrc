@@ -110,3 +110,5 @@ done
 autoload -Uz compinit && compinit -i
 
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
