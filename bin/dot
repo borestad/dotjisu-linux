@@ -5,7 +5,7 @@ sudo -v
 export ZSH=$HOME/.dotjitsu
 cd "$(dirname $0)"/..
 
-if [ ! type "brew" &> /dev/null ]; then
+if [ ! which "brew" &> /dev/null ]; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 

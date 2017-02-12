@@ -25,6 +25,7 @@ sudo apt install -y \
 	dfc \
 	dialog \
 	git \
+	tig \
 	iotop \
 	htop \
 	glances \

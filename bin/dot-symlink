@@ -2,12 +2,12 @@
 
 cd "$(dirname $0)"/../packages
 
-echo ''; hr - '#' -
 echo "[SYMLINKING]\n"
 
 # Make sure that .stow-global-ignore is set
 stow -R -t $HOME stow
 
+#echo $HOME
 BASEFILES=(
 	ack
 	curl
@@ -24,6 +24,8 @@ BASEFILES=(
 	tmux
 	zsh
 )
+
+#find $HOME/ -maxdepth 1 -type l | xargs rm
 stow -Rv -t $HOME $BASEFILES
 
 # dotp-symlink
