@@ -1,0 +1,6 @@
+if [[ $TERMINIX_ID ]]; then
+  . /etc/profile.d/vte.sh
+fi
+
+# GRC colorizes nifty unix tools all over the place
+. $DOTJITSU/packages/grc/grc.bashrc

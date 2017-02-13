@@ -3,7 +3,7 @@
 # =========================================================
 # Globals & system overrids
 # =========================================================
-alias brew -="brew -v"
+alias brew="brew -v"
 alias cp='cp -v'
 alias ctt='pygmentize -O style=monokai -f console256 -g'
 alias ctt2='pygmentize -O style=monokai -g'
@@ -20,6 +20,7 @@ alias serve='http-server'
 alias wget='wget --no-check-certificate'
 alias nx='PATH=$(npm bin):$PATH'
 alias crontab='VISUAL=nano EDITOR=nano crontab'
+alias code='$HOME/.local/share/umake/ide/visual-studio-code/code'
 #alias npm_='/usr/local/bin/npm'
 #alias _npm='/usr/local/bin/npm'
 wh () { which -a "$@" | ctt2 }
@@ -122,16 +123,11 @@ zr () {
   source $HOME/.zshrc
 }
 
-# OSX ONLY
-# =========================================================
-if [[ "$OSTYPE" == darwin* ]]; then
-  # Short-cuts for copy-paste.
-  #alias rm='trash -v'
-  # Case-insensitive pgrep that outputs full path.
-  brew.info () {
-    grep desc $(brew --prefix)/Library/Formula/*.rb | perl -ne 'm{^.*/(.*?)\.rb.*?\"(.*)"$} and print "$1|$2\n"' | column -t -s '|' | fzf --reverse
-  }
-fi
+
+# Case-insensitive pgrep that outputs full path.
+brew.info () {
+  grep desc $(brew --prefix)/Library/Formula/*.rb | perl -ne 'm{^.*/(.*?)\.rb.*?\"(.*)"$} and print "$1|$2\n"' | column -t -s '|' | fzf --reverse
+}
 
 
 if (( $+commands[http] )); then
@@ -177,14 +173,6 @@ finder.currentdir () {
 EOF
 }
 
-
-# Copy CSS to Mou for Markdown visual feedback
-mou () {
-  cp $1 $HOME/Library/Application\ Support/Mou/CSS/
-}
-
-# Lock current session and proceed to the login screen.
-alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # =========================================================
 # SSH

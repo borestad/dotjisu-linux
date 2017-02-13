@@ -2,9 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export XDG_DATA_DIRS="/home/johan/.linuxbrew/share:$XDG_DATA_DIRS"
-export DOTJITSU="$HOME/.dotjitsu"
+. $HOME/.env
+. $DOTJITSU/packages/shell/.shellrc
 
 # If not running interactively, don't do anything
 case $- in

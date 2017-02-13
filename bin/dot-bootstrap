@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+
+
+sudo add-apt-repository ppa:saiarcot895/myppa
+sudo apt-get update
+	
+sudo apt install -y apt-fast 
+
+sudo apt-fast install zsh stow git ruby build-essential curl wget 
+
+
