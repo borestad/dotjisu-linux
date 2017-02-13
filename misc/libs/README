@@ -1,0 +1,5 @@
+# https://github.com/patjak/mba6x_bl
+
+```
+sudo modprobe mba6x_bl
+```
