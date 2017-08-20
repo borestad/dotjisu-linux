@@ -1,6 +1,6 @@
 
 #!/usr/bin/env zsh
-
+unsetopt nomatch
 . $DOTJITSU/packages/shell/.shellrc
 
 # If you come from bash you might have to change your $PATH.
@@ -77,7 +77,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# export PATH="$HOME/.linuxbrew/bin:$PATH"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 eval $(dircolors -b $DOTJITSU/packages/dircolors/dircolors.ansi-universal)
@@ -159,6 +158,7 @@ files=(
 for file in $files; do
   source "${DOTJITSU}/packages/${file}/${file}.zsh"
 done
+
 
 autoload -Uz compinit && compinit -i
 

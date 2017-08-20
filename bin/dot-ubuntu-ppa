@@ -57,28 +57,28 @@ install_ppa () {
   PPAS+=('ppa:webupd8team/atom')
   PKGS+=('atom')
 
-  echo "- Docker"
-  [ -x "$(command -v docker)" ] || {
-    echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
-    sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-    PKGS+=('docker-engine')
-  }
+  #echo "- Docker"
+  #[ -x "$(command -v docker)" ] || {
+  #  echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+  #  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+  #  PKGS+=('docker-engine')
+  #}
 
   echo "- Numix theme"
   PPAS+=('ppa:numix/ppa')
-  PKGS+=('numix-*')
+  PKGS+=('numix-wallpaper-* numix-plymouth-theme numix-folders numix-white-icons')
 
-  echo "- Conky manager"
-  PPAS+=('ppa:teejee2008/ppa')
-  PKGS+=('conky-all conky-manager')
+  #echo "- Conky manager"
+  #PPAS+=('ppa:teejee2008/ppa')
+  #PKGS+=('conky-all conky-manager')
 
   echo "- Sublime text 3"
   PPAS+=('ppa:webupd8team/sublime-text-3')
   PKGS+=('sublime-text-installer')
 
-  echo "- hh (hstr)"
-  PPAS+=('ppa:ultradvorka/ppa')
-  PKGS+=('hh libncursesw5-dev')
+  #echo "- hh (hstr)"
+  #PPAS+=('ppa:ultradvorka/ppa')
+  #PKGS+=('hh libncursesw5-dev')
 
   echo "- PPA Manager";
   PPAS+=('ppa:webupd8team/y-ppa-manager')
@@ -93,25 +93,25 @@ install_ppa () {
   PPAS+=('ppa:noobslab/apps')
   PKGS+=('plank plank-themer')
 
-  echo "- Smartgit";
-  PPAS+=('ppa:eugenesan/ppa')
-  PKGS+=('smartgit')
+  #echo "- Smartgit";
+  #PPAS+=('ppa:eugenesan/ppa')
+  #PKGS+=('smartgit')
 
 #  echo "- Visual Code Studio";
 #  sudo wget -O - https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key | sudo apt-key add -
 #  sudo wget -O /etc/apt/sources.list.d/vscode.list https://tagplus5.github.io/vscode-ppa/ubuntu/vscode.list
 
-  echo '- Umake'
-  PPAS+=('ppa:ubuntu-desktop/ubuntu-make')
-  PKGS+=('ubuntu-make')  
-  
+echo '- Umake'
+PPAS+=('ppa:ubuntu-desktop/ubuntu-make')
+PKGS+=('ubuntu-make')
+
 
 
 #  echo "- Retroarch";
 #  PPAS+=('ppa:libretro/stable')
 #  PKGS+=('retroarch retroarch-* libretro-*')
 
-  echo "- Terminix";
+  echo "- Tilix";
   PPAS+=('ppa:webupd8team/terminix')
   [ -f /etc/profile.d/vte.sh ] || sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
   PKGS+=('terminix')
@@ -125,7 +125,7 @@ install_ppa () {
 
 
   for ppa in ${PPAS[@]};
-    do hr && sudo add-apt-repository -y $ppa;
+    do sudo add-apt-repository -y $ppa;
   done
 
   sudo apt update

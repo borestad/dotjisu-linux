@@ -10,5 +10,5 @@ fi
 
 # Key bindings
 # ------------
-source "$HOME/.linuxbrew/opt/fzf/shell/key-bindings.zsh"
+source /home/linuxbrew/.linuxbrew/opt/fzf/shell/key-bindings.zsh
 

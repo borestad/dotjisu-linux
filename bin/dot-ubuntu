@@ -9,15 +9,15 @@ sudo apt install -y aptitude
 sudo apt install -y python-pip python-dev build-essential python-software-properties
 
 # Sensors
-sudo apt install -y conky curl lm-sensors hddtemp
+#sudo apt install -y conky curl lm-sensors hddtemp
 
 # Network monitor deps
-sudo apt install -y gir1.2-gtop-2.0
+#sudo apt install -y gir1.2-gtop-2.0
 
 # GUI Utils
-sudo apt install -y \
-	bleachbit deja-dup bleachbit gparted \
-	conky-all gitk gitg git-gui
+#sudo apt install -y \
+#	bleachbit deja-dup bleachbit gparted \
+#	conky-all gitk gitg git-gui
 
 # CLI Utils
 sudo apt install -y \
@@ -54,7 +54,9 @@ sudo apt install -y \
 	notify-osd \
 	silversearcher-ag \
 	ack-grep \
-	vnstat
+	vnstat \
+	zopfli \
+	brotli
 
 # Libvirt
 # sudo apt install -y \

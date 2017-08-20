@@ -130,3 +130,10 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+#export PATH="/home/pi/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export XDG_DATA_DIRS="/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS"
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi

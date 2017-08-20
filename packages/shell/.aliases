@@ -20,7 +20,6 @@ alias serve='http-server'
 alias wget='wget --no-check-certificate'
 alias nx='PATH=$(npm bin):$PATH'
 alias crontab='VISUAL=nano EDITOR=nano crontab'
-alias code='$HOME/.local/share/umake/ide/visual-studio-code/code'
 #alias npm_='/usr/local/bin/npm'
 #alias _npm='/usr/local/bin/npm'
 wh () { which -a "$@" | ctt2 }

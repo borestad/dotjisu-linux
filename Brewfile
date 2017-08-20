@@ -1,17 +1,24 @@
-cask_args appdir: '/Applications'
+#!/usr/bin/env bash
 
-tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'homebrew/games'
-tap 'homebrew/versions'
-tap 'homebrew/science'
-tap 'homebrew/completions'
-tap 'thoughtbot/formulae'
+###
+# Glorified Brewfile, since brew bundle doesn't seem to work?
+###
+alias brew='brew -v'
+
+brew tap 'homebrew/bundle'
+brew tap 'homebrew/science'
+brew tap 'thoughtbot/formulae'
 
 # ================================
 # DEPS / PROGRAMMING LANGUAGES
 # ================================
-brew 'git'
+brew install \
+    git ghq hr hub \
+    fasd fzf fzy \
+    zsh-syntax-highlighting zsh-autosuggestions \
+    youtube-dl
+
+exit 0
 # brew 'git-annex'
 # brew 'git-lfs'
 # brew 'go'
@@ -50,7 +57,6 @@ brew 'git'
 # brew 'dialog'
 # brew 'dlite'
 # brew 'direnv'
-brew 'fasd'
 # brew 'gitsh'
 
 # tap 'yudai/gotty'
@@ -59,9 +65,7 @@ brew 'fasd'
 # brew 'fakeroot'
 # brew 'ffmpeg'
 # brew 'figlet'
-brew 'fzf'
 # brew 'gawk'
-brew 'ghq'
 # brew 'goaccess'
 # brew 'graphicsmagick'
 # brew 'grc'
@@ -69,7 +73,6 @@ brew 'ghq'
 # brew 'htop'
 # brew 'httpie'
 # brew 'httpry'
-brew 'hub'
 # brew 'hydra'
 # brew 'hugo'
 # brew 'ifstat'
@@ -125,8 +128,7 @@ brew 'hub'
 # brew 'youtube-dl'
 # brew 'zopfli'
 # *brew 'zsh'
-brew 'zsh-syntax-highlighting'
-brew 'zsh-autosuggestions'
+
 # brew 'yarn'
 
 # ================================
@@ -153,7 +155,7 @@ brew 'zsh-autosuggestions'
 # brew 'sqlite'
 
 # tap 'theory/sqitch'
-# brew 'sqitch' 
+# brew 'sqitch'
 # brew 'sqitch_pg'
 
 
