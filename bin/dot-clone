@@ -39,3 +39,7 @@ cd $HOME/.tmp/google-fonts && git submodule update --init --recursive
 
 echo ' - Better npm'
 git -C $HOME/.zsh/zsh-better-npm-completion pull || git clone https://github.com/lukechilds/zsh-better-npm-completion.git $HOME/.zsh/zsh-better-npm-completion
+
+echo ' - zsh-nvm'
+git -C $HOME/.zsh/zsh-nvm pull || git clone https://github.com/lukechilds/zsh-nvm.git $HOME/.zsh/zsh-nvm
+

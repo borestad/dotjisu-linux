@@ -123,6 +123,8 @@ source "`brew --prefix`/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source "`brew --prefix`/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # #source $HOME/.zsh/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
 
+
+
 # # source ~/.fzf
 
 # # Automatically load .envrc files
@@ -154,6 +156,7 @@ files=(
 	# z
 )
 
+source $HOME/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
 for file in $files; do
   source "${DOTJITSU}/packages/${file}/${file}.zsh"

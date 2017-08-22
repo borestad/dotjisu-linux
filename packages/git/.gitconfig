@@ -5,8 +5,8 @@
 [hub]
     protocol = https
 [user]
-    name = Johan Borestad
-    email = johan@borestad.com
+	name = Johan Borestad
+	email = johan@borestad.com
 		#useConfigOnly = true
 [credential]
   # helper = osxkeychain
