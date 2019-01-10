@@ -1,8 +1,8 @@
 {
-    "usageCount": 57, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<ctrl>+<down>", 
+    "description": "Display window info", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,13 +12,11 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<down>", 
-        "modifiers": [
-            "<super>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
     "modes": [], 
-    "showInTrayMenu": false, 
+    "showInTrayMenu": true, 
     "filter": {
         "regex": null, 
         "isRecursive": false

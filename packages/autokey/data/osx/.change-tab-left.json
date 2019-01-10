@@ -1,8 +1,8 @@
 {
-    "usageCount": 8, 
+    "usageCount": 40, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "page-up", 
+    "description": "change-tab-left", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,8 +12,9 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<up>", 
+        "hotKey": "<left>", 
         "modifiers": [
+            "<alt>", 
             "<super>"
         ]
     }, 

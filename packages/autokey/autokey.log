@@ -1,0 +1,328 @@
+2018-12-19 21:28:19,625 INFO - root - Initialising application
+2018-12-19 21:28:19,630 INFO - root - Initialise global hotkeys
+2018-12-19 21:28:19,630 INFO - config-manager - No configuration found - creating new one
+2018-12-19 21:28:19,632 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:28:19,633 INFO - config-manager - Persisting configuration
+2018-12-19 21:28:19,633 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:28:19,633 INFO - service - Starting service
+2018-12-19 21:28:19,680 INFO - interface - XRecord interface thread starting
+2018-12-19 21:28:19,681 INFO - service - Service now marked as running
+2018-12-19 21:28:19,750 INFO - root - Displaying configuration window
+2018-12-19 21:28:19,933 INFO - root - Entering main()
+2018-12-19 21:29:32,091 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:29:32,092 INFO - config-manager - Persisting configuration
+2018-12-19 21:29:32,093 INFO - config-manager - Backing up existing config file
+2018-12-19 21:29:32,095 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:29:41,975 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:29:41,976 INFO - config-manager - Persisting configuration
+2018-12-19 21:29:41,976 INFO - config-manager - Backing up existing config file
+2018-12-19 21:29:41,978 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:33:28,678 WARNING - config-manager - No action taken for delete event at /home/johan/.config/autokey/data/dotfiles
+2018-12-19 21:34:30,398 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:34:40,170 INFO - root - Shutting down
+2018-12-19 21:34:40,170 INFO - service - Service shutting down
+2018-12-19 21:34:40,976 INFO - config-manager - Persisting configuration
+2018-12-19 21:34:40,976 INFO - config-manager - Backing up existing config file
+2018-12-19 21:34:40,979 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:34:41,981 INFO - inotify - Shutting down file monitor
+2018-12-19 21:34:44,089 INFO - root - Initialising application
+2018-12-19 21:34:44,094 INFO - root - Initialise global hotkeys
+2018-12-19 21:34:44,095 INFO - config-manager - Loading config from existing file: /home/johan/.config/autokey/autokey.json
+2018-12-19 21:34:44,098 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:34:44,098 INFO - config-manager - Successfully loaded configuration
+2018-12-19 21:34:44,098 INFO - service - Starting service
+2018-12-19 21:34:44,141 INFO - interface - XRecord interface thread starting
+2018-12-19 21:34:44,142 INFO - service - Service now marked as running
+2018-12-19 21:34:44,213 INFO - root - Displaying configuration window
+2018-12-19 21:34:44,371 INFO - root - Entering main()
+2018-12-19 21:35:30,922 INFO - root - Shutting down
+2018-12-19 21:35:30,924 INFO - service - Service shutting down
+2018-12-19 21:35:31,354 INFO - config-manager - Persisting configuration
+2018-12-19 21:35:31,354 INFO - config-manager - Backing up existing config file
+2018-12-19 21:35:31,355 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:35:31,424 INFO - inotify - Shutting down file monitor
+2018-12-19 21:35:35,869 INFO - root - Initialising application
+2018-12-19 21:35:35,874 INFO - root - Initialise global hotkeys
+2018-12-19 21:35:35,874 INFO - config-manager - Loading config from existing file: /home/johan/.config/autokey/autokey.json
+2018-12-19 21:35:35,877 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:35:35,878 INFO - config-manager - Successfully loaded configuration
+2018-12-19 21:35:35,878 INFO - service - Starting service
+2018-12-19 21:35:35,927 INFO - interface - XRecord interface thread starting
+2018-12-19 21:35:35,928 INFO - service - Service now marked as running
+2018-12-19 21:35:36,022 INFO - root - Displaying configuration window
+2018-12-19 21:35:36,188 INFO - root - Entering main()
+2018-12-19 21:35:57,103 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:36:00,826 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:36:27,054 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:36:43,378 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:36:49,906 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:36:56,654 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:37:30,609 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:37:34,025 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:37:44,295 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:37:48,321 INFO - service - Matched hotkey phrase/script with prompt=True
+2018-12-19 21:38:31,670 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:38:34,652 INFO - service - Matched hotkey phrase/script with prompt=True
+2018-12-19 21:38:45,953 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:39:28,042 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:39:31,722 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:39:31,913 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:39:32,066 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:39:32,235 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:39:39,060 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:15,483 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:16,506 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:17,130 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:17,931 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:18,588 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:19,332 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:20,110 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:20,627 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:21,097 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:21,512 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:21,935 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:30,632 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:40:32,123 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:40:33,235 INFO - service - Matched hotkey phrase/script with prompt=True
+2018-12-19 21:40:51,722 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:42:32,045 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:42:32,045 INFO - config-manager - Persisting configuration
+2018-12-19 21:42:32,046 INFO - config-manager - Backing up existing config file
+2018-12-19 21:42:32,050 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:44:08,429 INFO - root - Shutting down
+2018-12-19 21:44:08,430 INFO - service - Service shutting down
+2018-12-19 21:44:08,439 INFO - config-manager - Persisting configuration
+2018-12-19 21:44:08,440 INFO - config-manager - Backing up existing config file
+2018-12-19 21:44:08,441 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 21:44:08,931 INFO - inotify - Shutting down file monitor
+2018-12-19 21:44:16,210 INFO - root - Initialising application
+2018-12-19 21:44:16,215 INFO - root - Initialise global hotkeys
+2018-12-19 21:44:16,215 INFO - config-manager - Loading config from existing file: /home/johan/.config/autokey/autokey.json
+2018-12-19 21:44:16,221 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:44:16,221 INFO - config-manager - Successfully loaded configuration
+2018-12-19 21:44:16,221 INFO - service - Starting service
+2018-12-19 21:44:16,903 INFO - interface - XRecord interface thread starting
+2018-12-19 21:44:16,904 INFO - service - Service now marked as running
+2018-12-19 21:44:17,004 INFO - root - Displaying configuration window
+2018-12-19 21:44:17,274 INFO - root - Entering main()
+2018-12-19 21:44:26,039 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:44:34,534 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:44:36,671 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:44:46,967 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:45:51,408 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:09,432 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:14,578 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:17,755 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:19,834 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:21,757 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:29,780 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:30,020 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:31,442 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:31,466 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:31,684 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:32,652 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:33,380 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:33,649 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:33,836 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:34,012 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:35,034 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:45,944 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:45,956 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:46,430 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:48,443 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:50,902 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:52,413 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:53,241 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:53,591 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:53,773 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:53,972 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:54,528 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:55,801 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:47:56,498 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:02,160 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:02,775 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:03,132 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:03,610 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:03,716 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:03,920 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:04,457 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:05,009 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:05,761 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:08,289 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:16,197 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:21,509 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:25,152 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:50,877 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:48:50,992 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:25,864 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:46,393 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:46,883 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:47,146 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:48,538 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:48,559 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:49:49,220 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:22,531 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:22,562 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:50:33,753 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:33,776 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 21:50:36,262 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:36,701 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:36,966 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:37,253 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:38,421 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:40,638 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:42,865 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:50:43,243 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:52:47,889 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:59:07,539 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 21:59:45,218 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:09:29,259 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:24:11,506 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:24:58,317 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:22,930 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:24,398 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:24,750 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:36,512 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:37,162 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:37,472 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:37,638 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:31:37,792 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:32:10,527 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:32:10,567 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 22:32:14,875 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:34:56,227 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:37:21,822 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:49:03,005 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:52:09,505 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:53:09,610 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:54:25,635 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:56:01,317 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:57:08,949 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:58:14,027 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:58:27,549 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:34,052 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:36,522 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:37,994 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,495 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,523 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,553 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,584 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,614 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,643 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,675 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,703 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,735 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,765 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,797 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,827 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,857 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,887 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,918 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,947 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:38,978 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,009 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,040 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,069 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,100 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,130 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,161 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:39,191 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:43,779 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:49,184 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 22:59:50,175 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:02,343 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:07,935 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:17,876 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:18,852 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:19,925 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:24,837 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:26,062 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:00:46,540 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:09,323 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:12,922 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:34,383 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:34,699 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:36,110 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:36,749 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:50,133 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:57,161 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:57,435 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:57,629 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:01:59,831 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:01,590 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:17,963 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:19,851 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:24,971 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:26,547 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:26,983 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:27,184 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:27,962 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:28,818 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:39,755 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:42,536 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:43,336 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:43,856 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:44,856 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:45,904 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:47,512 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:48,562 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:52,410 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:02:53,449 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:10,189 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 23:03:15,723 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:16,645 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:17,404 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:21,189 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:23,005 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:23,388 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:23,611 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:24,540 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:26,811 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:27,029 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:29,026 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:29,858 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:32,553 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:36,155 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:46,638 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:47,328 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:48,158 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:48,409 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:03:48,631 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:13,363 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:13,575 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:13,776 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:13,959 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:21,535 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:21,556 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 23:05:33,168 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:33,430 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:33,687 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:34,599 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:05:36,121 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:22,398 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:22,407 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 23:06:25,356 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:26,475 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:27,048 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:27,963 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:28,320 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:28,768 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:31,679 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:39,453 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:39,479 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 23:06:41,010 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:41,675 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:41,994 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:42,388 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:43,069 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:43,418 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:44,445 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:06:44,488 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2018-12-19 23:07:40,368 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:11:47,083 INFO - service - Matched hotkey phrase/script with prompt=False
+2018-12-19 23:11:51,238 INFO - root - Shutting down
+2018-12-19 23:11:51,238 INFO - service - Service shutting down
+2018-12-19 23:11:52,193 INFO - config-manager - Persisting configuration
+2018-12-19 23:11:52,194 INFO - config-manager - Backing up existing config file
+2018-12-19 23:11:52,197 INFO - config-manager - Finished persisting configuration - no errors
+2018-12-19 23:11:53,200 INFO - inotify - Shutting down file monitor

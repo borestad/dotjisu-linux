@@ -1,8 +1,8 @@
 {
-    "usageCount": 108, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<home>", 
+    "description": "Phrase from selection", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,12 +12,8 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<left>", 
-        "modifiers": [
-            "<alt>", 
-            "<ctrl>", 
-            "<shift>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
     "modes": [], 
     "showInTrayMenu": false, 

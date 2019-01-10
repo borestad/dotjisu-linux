@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "<ctrl>+q (quit)",
+    "store": {},
+    "modes": [],
+    "usageCount": 44,
+    "prompt": true,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<super>"
+        ],
+        "hotKey": "q"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

@@ -1,8 +1,8 @@
 {
-    "usageCount": 2, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<shift>+<home>", 
+    "description": "First phrase", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,20 +12,18 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<left>", 
-        "modifiers": [
-            "<shift>", 
-            "<super>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
     "modes": [
-        3
+        2
     ], 
     "showInTrayMenu": false, 
+    "matchCase": false, 
     "filter": {
-        "regex": null, 
+        "regex": ".* - gedit", 
         "isRecursive": false
     }, 
-    "type": "script", 
-    "store": {}
+    "type": "phrase", 
+    "sendMode": "kb"
 }

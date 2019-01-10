@@ -1,8 +1,8 @@
 {
-    "usageCount": 122, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<end>", 
+    "description": "List Menu", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,10 +12,8 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<right>", 
-        "modifiers": [
-            "<ctrl>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
     "modes": [], 
     "showInTrayMenu": false, 

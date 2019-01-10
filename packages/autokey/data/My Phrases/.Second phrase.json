@@ -1,8 +1,8 @@
 {
-    "usageCount": 12, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "change-tab-right", 
+    "description": "Second phrase", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,20 +12,16 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<right>", 
-        "modifiers": [
-            "<alt>", 
-            "<ctrl>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
-    "modes": [
-        3
-    ], 
+    "modes": [], 
     "showInTrayMenu": false, 
+    "matchCase": false, 
     "filter": {
         "regex": null, 
         "isRecursive": false
     }, 
-    "type": "script", 
-    "store": {}
+    "type": "phrase", 
+    "sendMode": "kb"
 }

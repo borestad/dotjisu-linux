@@ -1,8 +1,8 @@
 {
-    "usageCount": 22, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<ctrl>+q (quit)", 
+    "description": "Insert Date", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,14 +12,10 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "q", 
-        "modifiers": [
-            "<super>"
-        ]
+        "hotKey": null, 
+        "modifiers": []
     }, 
-    "modes": [
-        3
-    ], 
+    "modes": [], 
     "showInTrayMenu": false, 
     "filter": {
         "regex": null, 

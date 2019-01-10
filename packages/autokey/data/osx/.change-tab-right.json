@@ -1,8 +1,8 @@
 {
-    "usageCount": 49, 
+    "usageCount": 14, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "<ctrl>+c  (copy)", 
+    "description": "change-tab-right", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,8 +12,9 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "c", 
+        "hotKey": "<right>", 
         "modifiers": [
+            "<alt>", 
             "<super>"
         ]
     }, 
